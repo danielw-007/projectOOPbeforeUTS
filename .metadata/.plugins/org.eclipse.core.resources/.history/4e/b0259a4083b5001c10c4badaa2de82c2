@@ -1,0 +1,38 @@
+
+public class Reservation extends Order{
+    private Date reservationDate;
+    private String name;
+    private String reservationStatus;
+
+    public Reservation(Date reservationDate, String name, String reservationStatus) {
+  super();
+  this.reservationDate = reservationDate;
+  this.name = name;
+  this.reservationStatus = reservationStatus;
+ }
+
+ public Date getReservationDate() {
+  return reservationDate;
+ }
+
+ public void setReservationDate(Date reservationDate) {
+  this.reservationDate = reservationDate;
+ }
+
+ public String getName() {
+  return name;
+ }
+
+ public void setName(String name) {
+  this.name = name;
+ }
+
+ public String getReservationStatus() {
+  return reservationStatus;
+ }
+
+ public void setReservationStatus(String reservationStatus) {
+  this.reservationStatus = reservationStatus;
+ }
+
+}

@@ -1,0 +1,70 @@
+import java.sql.Date;
+import java.util.Vector;
+
+public class Order {
+    private String orderId;
+    private Table table;
+    private Vector<Menu> orderedMenu = new Vector<>();
+    private Date orderDate;
+    private int totalPrice;
+    private String orderStatus;
+
+    
+    public Order(String orderId, Table table, Vector<Menu> orderedMenu, Date orderDate, int totalPrice,
+			String orderStatus) {
+		this.orderId = orderId;
+		this.table = table;
+		this.orderedMenu = orderedMenu;
+		this.orderDate = orderDate;
+		this.totalPrice = totalPrice;
+		this.orderStatus = orderStatus;
+	}
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
+    }
+
+    public Table getTable() {
+        return table;
+    }
+
+    public void setTable(Table table) {
+        this.table = table;
+    }
+
+    public Vector<Menu> getOrderedMenu() {
+        return orderedMenu;
+    }
+
+    public void setOrderedMenu(Vector<Menu> orderedMenu) {
+        this.orderedMenu = orderedMenu;
+    }
+
+    public Date getOrderDate() {
+        return orderDate;
+    }
+
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(int totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public String getOrderStatus() {
+        return orderStatus;
+    }
+
+    public void setOrderStatus(String orderStatus) {
+        this.orderStatus = orderStatus;
+    }
+}

@@ -1,0 +1,31 @@
+import java.sql.Date;
+import java.util.Vector;
+
+public class Reservation extends Order {
+
+	private Date reservationDate;
+    private String name;
+
+    public Reservation(Vector<Menu> orderedMenu, Date reservationDate, String name) {
+		super(orderedMenu);
+		this.reservationDate = reservationDate;
+		this.name = name;
+	}
+
+	public Date getReservationDate() {
+		return reservationDate;
+	}
+
+	public void setReservationDate(Date reservationDate) {
+		this.reservationDate = reservationDate;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

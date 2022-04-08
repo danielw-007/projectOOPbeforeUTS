@@ -1,0 +1,4 @@
+
+public class Western extends MenuTypeAbstract {
+	this.menuTypeName = "Western";
+}
